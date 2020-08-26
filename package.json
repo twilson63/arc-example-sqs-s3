@@ -1,0 +1,9 @@
+{
+  "name": "arc-example-sqs-s3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@architect/macro-storage-private": "^1.0.0"
+  }
+}
