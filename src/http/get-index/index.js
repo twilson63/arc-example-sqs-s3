@@ -3,7 +3,8 @@ const arc = require('@architect/functions')
 // learn more about HTTP functions here: https://arc.codes/primitives/http
 exports.handler = async function http (req) {
   // publish doc in to queue
-  arc.queues.publish({name: 'example', payload: { hello: 'world'}})
+  await arc.queues.publish({name: 'example', payload: { hello: 'world'}})
+  console.log('published payload')
 
   return {
     headers: {
